@@ -44,14 +44,13 @@
 */
 // YOUR CODE HERE
 function parseQueryString (string) {
-  var arrayLetters = string.split("&");
+  var arrayLetters = string.split("&");       //split will pull out "&" from the string and turn it into an array of letters
   console.log(arrayLetters);
   var letterObject = {};
 
-arrayLetters.forEach(function(element){
+arrayLetters.forEach(function(element){      // new arrayLetters variable will call another split function to take out "=".
     var letters =element.split("=");
-
-    letterObject[letters[0]] = letters[1];
+    letterObject[letters[0]] = letters[1]; //bc it is a string.. in order to pull the letter[index], brackets will be used.
   });
     console.log(letterObject);
 }
