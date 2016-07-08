@@ -34,22 +34,29 @@
 
 // YOUR CODE HERE
 
-//gives days until date
-
-//dob
-//daysUntilDate
-//
-//
-//
-
-function daysUntilDate(dateString){ //days on earth
+function daysUntilDate(dateString){
   var days = Math.round((new Date(dateString) - Date.now())/86400000);
   var age = (days/86400000 %1);
   //console.log(days);             //returns negative number
-  var absDays = Math.abs(days);
+  var absDays = Math.abs(days);    //creates absolute value; no negative days
   console.log(absDays);
 }
 
+// birthdayReminder([
+//   {
+//     name: "Jack",
+//     dob: "10/31/2013"
+//   },
+//   {
+//     name: "Jill",
+//     dob: "4/01/1975"
+//   }
+// ]);
+function birthdayReminder(dob){
+
+
+  console.log()
+}
 
 
 // function birthdayReminder(info) {
