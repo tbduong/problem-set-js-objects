@@ -42,6 +42,13 @@ function daysUntilDate(dateString){
   console.log(absDays);
 }
 
+
+  function birthdayReminder(dob) {
+    info.dob.forEach(function daysUntilDate() {
+      (console.log(array.name + "'s'" + " " + "is in" + daysUntilDate + "days!"));
+    });
+
+
 // birthdayReminder([
 //   {
 //     name: "Jack",
@@ -52,15 +59,9 @@ function daysUntilDate(dateString){
 //     dob: "4/01/1975"
 //   }
 // ]);
-function birthdayReminder(dob){
 
 
-  console.log()
 }
 
 
-// function birthdayReminder(info) {
-//   info.dob.forEach(function daysUntilDate() {
-//     (console.log(array.name + "'s'" + " " + "is in" + daysUntilDate + "days!"));
-//   });
 }
