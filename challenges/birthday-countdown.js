@@ -35,10 +35,24 @@
 // YOUR CODE HERE
 
 //gives days until date
-function daysUntilDate(dateString){
-  return Math.round((new Date(dateString) - Date.now())/86400000);
+
+//dob
+//daysUntilDate
+//
+//
+
+
+function daysUntilDate(dateString){ //days on earth
+  var milliseconds = Math.round((new Date(dateString) - Date.now())/86400000);
+  //var age = (milliseconds/86400000 %1);
+  console.log(milliseconds);
+
 }
 
-function birthdayReminder(){
 
+
+// function birthdayReminder(info) {
+//   info.dob.forEach(function daysUntilDate() {
+//     (console.log(array.name + "'s'" + " " + "is in" + daysUntilDate + "days!"));
+//   });
 }
