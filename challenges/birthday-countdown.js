@@ -40,13 +40,14 @@
 //daysUntilDate
 //
 //
-//    
+//
 
 function daysUntilDate(dateString){ //days on earth
-  var days = Math.round((new Date(dateString) - Date.now()));
-  //var age = (milliseconds/86400000 %1);
-  console.log(days);
-
+  var days = Math.round((new Date(dateString) - Date.now())/86400000);
+  var age = (days/86400000 %1);
+  //console.log(days);             //returns negative number
+  var absDays = Math.abs(days);
+  console.log(absDays);
 }
 
 
