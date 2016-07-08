@@ -53,20 +53,50 @@
 //
 
 
-
-
+// function splitString(stringToSplit) {
+//   var arrayOfStrings = stringToSplit.split('');
+//   var sortedString = arrayOfStrings.sort();
+//   var current = null;
+//   var count = 0;
+//   for (var i = 0; i < sortedString.length; i++) {
+//       if (sortedString[i] != current) {
+//           if (count > 0) {
+//                 console.log(current + ' = ' + count/sortedString.length);
+//                 console.log(current + ' = ' + count);
+//               }
+//               current = sortedString[i];
+//               count = 1;              //compares letter to the next, if not the same count =1 and moves on.
+//           } else {
+//               count++;                //compares letter to the next, if it is the same increment by +1 (++)
+//           }
+//       }
+//       if (count > 0) {              //console.logs count
+//           console.log(current + ' = ' + count/sortedString.length);
+//           console.log(current + ' = ' + count);
+//     }
+// }
 
 //This function will turn the word into an array (wordArray).
-function letterCount(word){
+function letterCount(word) {
     var wordArray = word.split("");
-    console.log(wordArray);
     var sortedWordArray = wordArray.sort();   //sorts array
-    console.log(wordArray);
-}
-  for (var i= wordArray.length-1; i>0; i++);
-    
+    var current = null;
+    var count = 0;
 
-
-
+    for (var i= wordArray.length-1; i>0; i++); {
+      if (sortedWordArray[i] !=current) {
+        if (count > 0) {
+            console.log(current + " = " + count);   ///sortedWordArray.length);
+            console.log(current + " = " + count);
+        }
+        current = sortedWordArray[i];     //Checks index
+        count = 1;
+    } else {
+        count++;
+      }
+    } if (count > 0) {              //console.logs count
+          console.log(current + ' = ' + count);    ///sortedWordArray.length);
+          console.log(current + ' = ' + count);
+    }
 
 }
