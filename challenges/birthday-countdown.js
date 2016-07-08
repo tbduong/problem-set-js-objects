@@ -1,5 +1,4 @@
 /*
-
   Create a function `daysUntilDate` that accepts a string (with the format `"mm/dd/yyyy"`) and
   returns the number of days (integer) between today and that date. Please use the built in
   Javascript `Date` type in your solution.
@@ -34,3 +33,12 @@
 */
 
 // YOUR CODE HERE
+
+//gives days until date
+function daysUntilDate(dateString){
+  return Math.round((new Date(dateString) - Date.now())/86400000);
+}
+
+function birthdayReminder(){
+
+}
