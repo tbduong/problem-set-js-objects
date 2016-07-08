@@ -1,5 +1,4 @@
 /*
-
   Create a function `parseQueryString` that accepts a query string parameter as an argument, and
   converts it into an object, using the following rules:
 
@@ -43,5 +42,16 @@
     ```
 
 */
-
 // YOUR CODE HERE
+function parseQueryString (string) {
+  var arrayLetters = string.split("&");
+  console.log(arrayLetters);
+  var letterObject = {};
+
+arrayLetters.forEach(function(element){
+    var letters =element.split("=");
+
+    letterObject[letters[0]] = letters[1];
+  });
+    console.log(letterObject);
+}
